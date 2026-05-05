@@ -4,17 +4,16 @@
 
 <h1>Data Catalog Benchmark</h1>
 
-<p><strong>The Strategic Intelligence Platform for Unified Metadata Governance, Lineage Excellence, and Cross-Platform Data Discovery</strong></p>
+<p><strong>The Institutional-Grade Platform for Standardized Data Catalog Foundations, Metadata Governance, and Multi-Cloud Discovery Ecosystems.</strong></p>
 
-[![Governance: Data--Maturity](https://img.shields.io/badge/Governance-Data--Maturity-blue.svg?style=for-the-badge&labelColor=000000)]()
-[![Status: Production--Ready](https://img.shields.io/badge/Status-Production--Ready-indigo.svg?style=for-the-badge&labelColor=000000)]()
-[![Ecosystem: Multi--Cloud](https://img.shields.io/badge/Ecosystem-Multi--Cloud-green.svg?style=for-the-badge&labelColor=000000)]()
-[![Standard: Metadata--First](https://img.shields.io/badge/Standard-Metadata--First-ff69b4?style=for-the-badge&labelColor=000000)]()
+[![Standard: Governance-Excellence](https://img.shields.io/badge/Standard-Governance--Excellence-blue.svg?style=for-the-badge&labelColor=000000)]()
+[![Status: Production--Ready](https://img.shields.io/badge/Status-Production--Ready-emerald.svg?style=for-the-badge&labelColor=000000)]()
+[![Focus: Secure--Metadata--Orchestration](https://img.shields.io/badge/Focus-Secure--Metadata--Orchestration-indigo.svg?style=for-the-badge&labelColor=000000)]()
 
 <br/>
 
-> **"Data without context is a liability; data with metadata is an asset."** 
-> Data Catalog Benchmark is an industrial-grade platform designed to evaluate, compare, and continuously measure the effectiveness of enterprise data catalogs across the global modern data stack.
+> **"Industrializing data governance to automate metadata foundations."** 
+> **Data Catalog Benchmark** is an enterprise-grade platform designed to provide a secure, measurable, and highly automated foundation for global data governance operations. It orchestrates the complex lifecycle of metadata—from multi-cloud harvesting and automated lineage extraction to high-throughput discovery and unified governance auditing.
 
 </div>
 
@@ -22,585 +21,263 @@
 
 ## 🏛️ Executive Summary
 
-**Data Catalog Benchmark** is a premium, flagship platform designed for Chief Data Officers (CDOs), Data Governance Leaders, and Analytics Architects. In an era where data volume is exploding, the ability to find, understand, and trust data is the ultimate competitive advantage.
+Fragmented metadata silos and manual data discovery are strategic operational liabilities; lack of a standardized catalog benchmark is a primary barrier to organizational engineering maturity. Organizations fail to govern their data estates not because of a lack of catalogs, but because of fragmented metadata standards, lack of automated lineage validation, and an inability to orchestrate governance planes with operational precision.
 
-This platform provides a **Unified Benchmarking Engine** that evaluates metadata coverage, lineage depth, search relevance, and stewardship adoption across **Azure Purview**, **AWS Glue**, **GCP Dataplex**, **Snowflake Horizon**, **Databricks Unity Catalog**, and **Microsoft Fabric**. It delivers data-driven executive scorecards that translate technical metadata maturity into business-ready governance roadmaps.
-
----
-
-## 💡 Why Data Catalogs Matter
-
-The modern data estate is fragmented, opaque, and increasingly regulated.
-- **Data Discovery**: Analysts spend 80% of their time finding data instead of analyzing it.
-- **Trust & Quality**: Without lineage and quality metadata, decision-makers lack confidence in reports.
-- **Regulatory Compliance**: PII discovery and data retention policies are impossible to enforce without a robust catalog.
-- **Cost Optimization**: Redundant datasets and compute waste go unnoticed in an unmapped data lake.
+This platform provides the **Governance Intelligence Plane**. It implements a complete **Data-Catalog-Benchmark-as-Code Framework**, enabling CDOs and Data Stewards to manage global governance foundations as first-class citizens. By automating the identification of metadata bottlenecks through real-time telemetry analysis and orchestrating the provisioning of secure performance-driven governance policies, we ensure that every organizational data asset—from raw lakehouse tables to executive gold reports—is cataloged by default, audited for history, and strictly aligned with institutional governance frameworks.
 
 ---
 
-## 🚀 Business Outcomes
+## 📐 Architecture Storytelling: Principal Reference Models
 
-### 🎯 Strategic Governance Impact
-- **80% Faster Data Discovery**: Reducing the "Time to Insight" by automating metadata enrichment and search.
-- **Verified Data Lineage**: 100% visibility into data provenance for audit and impact analysis.
-- **Continuous Compliance**: Real-time PII classification and policy enforcement across multi-cloud silos.
-- **Informed Product Selection**: Data-driven benchmarking to select the right catalog for your specific ecosystem.
-
----
-
-## 🏗️ Technical Stack
-
-| Layer | Technology | Rationale |
-|---|---|---|
-| **Benchmarking Engine** | Python / Pandas / NumPy | High-performance analysis of metadata coverage and maturity. |
-| **Search Intelligence** | OpenSearch / Elasticsearch | Testing and benchmarking search relevance and discovery speed. |
-| **Backend** | FastAPI | Asynchronous API for high-velocity metadata ingestion. |
-| **Frontend** | React 18, Vite | Premium portal for executive scorecards and lineage explorers. |
-| **Infrastructure** | Terraform | Multi-cloud IaC for consistent governance foundations. |
-| **Runtime** | Kubernetes (AKS/EKS) | Scalable hosting for metadata connectors and workers. |
-
----
-
-## 📐 Architecture Storytelling: 50+ Diagrams
-
-### 1. Executive High-Level Architecture
-The end-to-end vision of the data catalog benchmarking ecosystem.
-
-```mermaid
-graph TD
-    Sources[Data Sources: Snowflake/Databricks/Fabric] --> Connectors[Metadata Connectors]
-    Connectors --> Engine[Benchmark Engine]
-    Engine --> Store[(Governance Knowledge Graph)]
-    Store --> UI[Executive Dashboard]
-    UI --> Insights[Remediation Roadmap]
-```
-
-### 2. Detailed Component Topology
-The internal service boundaries and secure metadata synchronization paths.
+### 1. Principal Architecture: Global Data Catalog Benchmark & Governance Intelligence Plane
+This diagram illustrates the end-to-end flow from metadata telemetry ingestion and multi-cloud orchestration to catalog enforcement, performance validation, and institutional governance auditing.
 
 ```mermaid
 graph LR
-    subgraph "Governance Control Plane"
-        Portal[Executive UI]
-        API[Governance API]
-        Worker[Indexing Worker]
+    %% Subgraph Definitions
+    subgraph MetadataIngress["Metadata & Lineage Ingress"]
+        direction TB
+        Catalogs["Azure Purview / Glue / Dataplex"]
+        Engines["Snowflake / Databricks / Fabric"]
+        Platforms["M365 / Salesforce / SAP"]
     end
-    subgraph "Data Tier"
-        DB[(PostgreSQL)]
-        Search[(OpenSearch)]
-        Cache[(Redis)]
+
+    subgraph IntelligenceEngine["Governance Intelligence Hub"]
+        direction TB
+        API["FastAPI Governance Gateway"]
+        CatalogOrchestrator["Global Metadata & Lineage Hub"]
+        Governance_Hub["Compliance & Guardrail Hub"]
+        AIOps_Validator["Drift & Discovery Analysis Hub"]
     end
-    Portal --> API
-    API --> DB
-    API --> Search
-    Worker --> Cache
-```
 
-### 3. Frontend to Backend Request Path
-Tracing a request to view a "Metadata Coverage" benchmark.
+    subgraph OperationsPlane["Distributed Governance Ecosystem"]
+        direction TB
+        ManagedCatalogs["Managed Standardized Metadata Hubs"]
+        ActivePipelines["Managed Automated Lineage Pipes"]
+        DiscoverySinks["Managed Infrastructure Delivery Hubs"]
+    end
 
-```mermaid
-sequenceDiagram
-    participant CDO as Chief Data Officer
-    participant W as React UI
-    participant A as FastAPI
-    participant E as Benchmark Engine
+    subgraph OperationsHub["Institutional Data Hub"]
+        direction TB
+        Scorecard["Governance Maturity Scorecard"]
+        Analytics["Discovery Flow & Accuracy Velocity Stats"]
+        Audit["Forensic Governance Metadata Lake"]
+    end
+
+    subgraph DevOps["Data-Catalog-Benchmark-as-Code Framework"]
+        direction TB
+        TF["Terraform Governance Modules"]
+        DriftBot["Productivity & Config Drift Validator"]
+        ChatOps["Measurement Operations Hub"]
+    end
+
+    %% Flow Arrows
+    MetadataIngress -->|1. Submit Telemetry| API
+    API -->|2. Orchestrate Governance| CatalogOrchestrator
+    CatalogOrchestrator -->|3. Apply Privacy Guard| Governance_Hub
+    Governance_Hub -->|4. Assess Drift| AIOps_Validator
     
-    CDO->>W: Select "Snowflake Coverage"
-    W->>A: GET /metadata/coverage?source=snowflake
-    A->>E: Calculate Maturity Score
-    E-->>A: JSON Result (Score: 82%)
-    A-->>W: Render Trend Charts
-    W->>W: Update Executive Dashboard
+    AIOps_Validator -->|5. Execute Harvesting| OperationsPlane
+    OperationsPlane -->|6. Notify Status| ChatOps
+    API -->|7. Visualize Health| Scorecard
+    
+    Scorecard -->|8. Track Maturity| Analytics
+    Scorecard -->|9. Record Performance| Audit
+    
+    TF -->|10. Provision Backbone| IntelligenceEngine
+    DriftBot -->|11. Inject Friction Risk| CatalogOrchestrator
+    Audit -->|12. Improve Operations| ManagedCatalogs
+
+    %% Styling
+    classDef ingress fill:#f5f5f5,stroke:#616161,stroke-width:2px;
+    classDef intel fill:#e8eaf6,stroke:#1a237e,stroke-width:2px;
+    classDef operations fill:#e1f5fe,stroke:#01579b,stroke-width:2px;
+    classDef ops fill:#ede7f6,stroke:#311b92,stroke-width:2px;
+    classDef devops fill:#e8f5e9,stroke:#1b5e20,stroke-width:2px;
+
+    class MetadataIngress ingress;
+    class IntelligenceEngine intel;
+    class OperationsPlane operations;
+    class OperationsHub ops;
+    class DevOps devops;
 ```
 
-### 4. Metadata Ingestion Control Plane
-Managing the lifecycle of cross-cloud metadata harvesting.
-
-```mermaid
-graph TD
-    Hub[Central Hub] --> Connector_Az[Azure Purview Connector]
-    Hub --> Connector_AWS[AWS Glue Connector]
-    Hub --> Connector_GCP[GCP Dataplex Connector]
-    Connector_Az --> Audit[Sync Logging]
-```
-
-### 5. Multi-Source Integration Topology
-Mapping the metadata reach across the modern data stack.
-
-```mermaid
-graph LR
-    Stack[Modern Data Stack] --> SF[Snowflake]
-    Stack --> DB[Databricks]
-    Stack --> FB[Fabric]
-    SF --> Catalog[Data Catalog Benchmark]
-    DB --> Catalog
-    FB --> Catalog
-```
-
-### 6. Regional Deployment Model
-Hosting the governance platform for global enterprise resilience.
-
-```mermaid
-graph TD
-    LB[Traffic Manager] --> EastUS[East US: Primary Node]
-    LB --> WestEurope[West Europe: Secondary Node]
-    EastUS --> State[(Global State Store)]
-```
-
-### 7. DR Failover Model
-Continuous metadata availability even during regional outages.
+### 2. The Governance Lifecycle Flow
+The continuous path of a data catalog platform from initial integration (harvest) and aggregation (index) to active analysis (classify), optimization (certify), and institutional forensic auditing (scorecard).
 
 ```mermaid
 graph LR
-    Primary[Active: East US] -->|Sync| Secondary[Standby: West US]
-    Secondary -->|Probe| Primary
-    Primary --> Alert{Outage?}
-    Alert -->|Yes| Secondary
+    Integrate["Integrate (Harvest)"] --> Aggregate["Aggregate (Index)"]
+    Aggregate --> Analyze["Analyze (Classify)"]
+    Analyze --> Optimize["Optimize (Certify)"]
+    Optimize --> Report["Report & Scorecard"]
 ```
 
-### 8. API Gateway Architecture
-Securing and throttling the entry point for governance intelligence.
-
-```mermaid
-graph TD
-    Req[Incoming API Request] --> Auth[OIDC / Entra ID]
-    Auth --> WAF[Web App Firewall]
-    WAF --> Router[Path Router]
-```
-
-### 9. Queue Worker Architecture
-Managing heavy metadata indexing and scoring jobs.
+### 3. Distributed Governance Topology
+Strategically orchestrating standardized governance across global data regions, diverse cloud architectures, and multi-cloud targets, providing a unified institutional view of global governance health and operational readiness.
 
 ```mermaid
 graph LR
-    Job[Harvest Metadata] --> Redis[Redis Job Queue]
-    Redis --> W1[Worker: Snowflake]
-    Redis --> W2[Worker: Databricks]
-    W1 --> Result[Update Graph Store]
+    RegionA["Edge: US West (Primary) Ingress"] -->|Sync| Hub["Unified Data Hub"]
+    BU["Hub: EU Central (Secondary) Hub"] -->|Sync| Hub
+    Cloud["Site: Multi-Cloud (Azure/AWS) SaaS"] -->|Sync| Hub
+    Hub --- Logic["Global Governance Engine"]
 ```
 
-### 10. Dashboard Analytics Flow
-How raw metadata signals become executive maturity scorecards.
+### 4. Governance Hub & High-Trust Data Plane Protection Flow
+Executing complex logic for securing the bridge between data owners and consumers, ensuring every organizational identity is verified, metadata-level privacy is maintained, and every governance access is according to institutional standards.
 
 ```mermaid
 graph TD
-    Raw[Raw Asset JSON] --> Normalizer[Normalizer]
-    Normalizer --> Scorer[Weighted Scorer]
-    Scorer --> Dashboard[Executive UI]
+    GovernanceData["Usage: Lineage & Discovery Data"] --> Bridge["Rule: Guardrail Hub"]
+    Bridge --> PolicyMap["Rule: Security & Policy Map"]
+    PolicyMap -->|Evaluate| Context["PATH: Global Governance View"]
+    Context --- Estimate["Governance Integrity Score"]
 ```
 
-### 11. Metadata Harvesting Workflow
-Automated ingestion from source APIs to the central catalog.
+### 5. Multi-Cloud Governance Federation & Governance Flow
+Automatically managing unified governance standards across global regions and diverse cloud tenants, ensuring institutional data residency and privacy boundaries by default.
 
 ```mermaid
 graph LR
-    Source[Data Source] --> Trigger[Scheduled Sync]
-    Trigger --> Extractor[Metadata Extractor]
-    Extractor --> Map[Schema Mapper]
-    Map --> Central[Central Repository]
+    Org["Global Modernization System"] -->|Apply| Guard["Governance Isolation Hub"]
+    Guard -->|Violate| Alert["Discovery Latency Alert"]
+    Guard -->|Pass| Verify["Status: Governed Catalog"]
+    Verify --- Audit["Isolation Compliance Log"]
 ```
 
-### 12. Lineage Extraction Lifecycle
-Tracing the flow of data from source systems to analytics.
-
-```mermaid
-graph TD
-    Code[SQL / ETL Script] --> Parser[SQL Parser]
-    Parser --> Nodes[Lineage Nodes]
-    Nodes --> Edge[Relationship Map]
-    Edge --> UI[Lineage Explorer]
-```
-
-### 13. Business Glossary Ownership Model
-Defining accountability for business terms and definitions.
+### 6. Encryption & Perimeter Protection Flow (Governance Standard)
+Managing the lifecycle of a governance request, automatically enforcing institutional TLS 1.3 and resource encryption standards as required by security policy, ensuring zero-latency security confidence.
 
 ```mermaid
 graph LR
-    Term[Business Term] --> Owner[Data Steward]
-    Owner --> Review[Governance Board]
-    Review --> Published[Approved Glossary]
+    GovernanceReq["Dashboard Access Query"] -->|Check| Gatekeeper["Discovery Protection Bot"]
+    Gatekeeper -->|Verify| TLS["TLS 1.3 & Resource Encryption Check"]
+    TLS -->|Pass| Admit["Status: Secure Governance Traffic"]
+    Admit --- Audit["Security Compliance Log"]
 ```
 
-### 14. Data Quality Scoring Flow
-Quantifying the reliability of data assets.
+### 7. Institutional Governance Maturity Scorecard
+Grading organizational performance based on key indicators: Metadata Coverage Index, Lineage Fidelity Index, and Discovery Adoption Scores.
 
 ```mermaid
 graph TD
-    Rule[DQ Rule: Completeness] --> Profile[Data Profiler]
-    Profile --> Metric[Quality Score]
-    Metric --> Catalog[Asset Badge]
+    Post["Governance Health: 99%"] --> Risk["Delivery Gap: 1%"]
+    Post --- C1["Coverage Index (100%)"]
+    Post --- C2["Discovery Adoption (98%)"]
 ```
 
-### 15. Stewardship Review Workflow
-The lifecycle of metadata validation by human stewards.
+### 8. Identity & RBAC for Governance
+Managing fine-grained access to governance hubs, provisioning workers, and audit logs between CDOs, Data Stewards, and Analysts.
+
+```mermaid
+graph TD
+    CDO["CDO"] --> Hub["Manage Organization rules"]
+    Steward["Data Steward"] --> Exec["Execute catalog policies"]
+    Analyst["Data Analyst"] --> Audit["Verify Lineage Proofs"]
+```
+
+### 9. IaC Deployment: Data-Catalog-Benchmark-as-Code Framework
+Using modular Terraform to deploy and manage the versioned distribution of the governance tracking hubs, indexing protection workers, and forensic metadata lakes.
 
 ```mermaid
 graph LR
-    Draft[Draft Metadata] --> Queue[Steward Queue]
-    Queue --> Validate[Human Review]
-    Validate --> Active[Published Asset]
+    HCL["Infrastructure Code"] --> TF["Terraform Apply"]
+    TF --> Engine["Governance Control Plane"]
+    Engine --> Clusters["HA Validation Fleet"]
 ```
 
-### 16. Dataset Certification Lifecycle
-Promoting trusted datasets to "Gold" status.
-
-```mermaid
-graph TD
-    Raw[Raw Dataset] --> Test[Quality Tests]
-    Test -->|Pass| Certify[Apply Gold Badge]
-    Certify --> Promote[Promote to Sandbox]
-```
-
-### 17. Privacy Classification Workflow
-Automated identification of sensitive data (PII).
+### 10. AIOps Governance Drift & Risk Validation Flow
+Using advanced analytics to identify sudden surges in discovery latency, unauthorized metadata changes, suspicious configuration drifts, or unusual delivery pattern changes that could result in institutional risk or data loss.
 
 ```mermaid
 graph LR
-    Scan[Asset Scan] --> Regex[PII Patterns]
-    Regex --> Match[Sensitive Match]
-    Match --> Tag[Apply PII Tag]
+    Drift["Delivery Change Event"] --> Analyzer["Drift Detection Bot"]
+    Analyzer -->|Anomaly| Alert["Governance Integrity Alert"]
+    Analyzer -->|Normal| Pass["Status Optimal"]
 ```
 
-### 18. Retention Policy Model
-Governing the lifecycle and deletion of data assets.
-
-```mermaid
-graph TD
-    Policy[Retention Rule] --> Age[Calculate Data Age]
-    Age --> Action[Archive / Delete]
-```
-
-### 19. Access Request Lifecycle
-Streamlining data access via the catalog.
+### 11. Metadata Lake for Forensic Governance Audit
+Storing long-term records of every metadata integration event (metadata), every harvest executed, and every version history for institutional record-keeping, compliance auditing, and post-provisioning forensics.
 
 ```mermaid
 graph LR
-    Req[Access Request] --> App[Owner Approval]
-    App --> Prov[IAM Provisioning]
-```
-
-### 20. Sensitive Data Detection Flow
-Deep inspection for sensitive patterns in unstructured data.
-
-```mermaid
-graph TD
-    Blob[Cloud Storage] --> Crawler[Metadata Crawler]
-    Crawler --> NLP[NLP Classifier]
-    NLP --> Score[Privacy Score]
-```
-
-### 21. Product Comparison Matrix Flow
-Benchmarking catalog vendors against enterprise requirements.
-
-```mermaid
-graph LR
-    Req[Requirements] --> Matrix[Comparison Matrix]
-    Matrix --> Rank[Product Ranking]
-```
-
-### 22. Metadata Coverage Scoring Model
-Measuring the "Density" of metadata across the estate.
-
-```mermaid
-graph TD
-    Asset[Data Asset] --> Metrics[Tags/Owner/Desc]
-    Metrics --> Formula[Coverage %]
-    Formula --> Score[Executive Score]
-```
-
-### 23. Search Relevance Benchmark
-Testing the discoverability of data assets.
-
-```mermaid
-graph LR
-    Query[User Search] --> Rank[Search Rank]
-    Rank --> Accuracy[Relevance Score]
-```
-
-### 24. Lineage Depth Comparison
-Benchmarking cross-platform lineage capabilities.
-
-```mermaid
-graph TD
-    SF[Snowflake Lineage] --> Depth[3 Levels]
-    Unity[Unity Catalog] --> Depth[5 Levels]
-```
-
-### 25. Adoption Analytics Workflow
-Measuring how many users are actually using the catalog.
-
-```mermaid
-graph LR
-    Log[Access Logs] --> User[Active Users]
-    User --> Retention[Stickiness Score]
-```
-
-### 26. Cost vs Capability Model
-Optimizing the spend on data governance tooling.
-
-```mermaid
-graph TD
-    Price[License Cost] --> Value[Feature Set]
-    Value --> ROI[ROI Calculator]
-```
-
-### 27. Migration Decision Framework
-Planning the move from legacy to modern catalogs.
-
-```mermaid
-graph LR
-    Audit[Current State] --> Gap[Gap Analysis]
-    Gap --> Plan[Migration Roadmap]
-```
-
-### 28. Vendor Score Aggregation
-Combining disparate benchmarks into a single vendor grade.
-
-```mermaid
-graph TD
-    S1[Coverage] --> Agg[Aggregator]
-    S2[Lineage] --> Agg
-    Agg --> Grade[Vendor Grade: A-F]
-```
-
-### 29. Feature Maturity Radar Flow
-Visualizing the maturity of specific governance capabilities.
-
-```mermaid
-graph LR
-    Metric[Feature Maturity] --> Radar[Radar Chart]
-```
-
-### 30. Recommendation Engine Model
-Automated guidance on catalog selection and optimization.
-
-```mermaid
-graph TD
-    Profile[Org Profile] --> Rules[Logic Engine]
-    Rules --> Rec[Top 3 Catalogs]
-```
-
-### 31. Snowflake Integration Flow
-Harvesting metadata from Snowflake Horizon.
-
-```mermaid
-graph LR
-    SF_API[Information Schema] --> Connector[SF Connector]
-    Connector --> Sync[Sync to Benchmark]
-```
-
-### 32. Databricks Integration Flow
-Extracting lineage from Unity Catalog.
-
-```mermaid
-graph TD
-    Unity[Unity Catalog API] --> Lineage[Lineage JSON]
-    Lineage --> Catalog[Benchmark Hub]
-```
-
-### 33. Fabric Integration Flow
-Consolidating OneLake metadata into the central hub.
-
-```mermaid
-graph LR
-    OneLake[OneLake] --> PowerBI_API[Fabric Metadata API]
-    PowerBI_API --> Hub[Benchmark Hub]
-```
-
-### 34. BigQuery Integration Flow
-Synchronizing GCP Dataplex metadata.
-
-```mermaid
-graph TD
-    GCP[GCP API] --> Dataplex[Dataplex Metadata]
-    Dataplex --> Hub[Benchmark Hub]
-```
-
-### 35. Redshift Integration Flow
-Extracting AWS Glue Data Catalog state.
-
-```mermaid
-graph LR
-    AWS[AWS Glue] --> Glue_API[Glue Metadata]
-    Glue_API --> Hub[Benchmark Hub]
-```
-
-### 36. Synapse Integration Flow
-Mapping Azure Purview assets to the benchmark.
-
-```mermaid
-graph TD
-    Purview[Azure Purview] --> Purview_API[Atlas API]
-    Purview_API --> Hub[Benchmark Hub]
-```
-
-### 37. Lakehouse Metadata Flow
-Mapping unstructured lake data to structured catalog entries.
-
-```mermaid
-graph LR
-    S3[S3 / ADLS] --> Crawler[Glue / Purview Crawler]
-    Crawler --> Catalog[Metadata Hub]
-```
-
-### 38. Streaming Metadata Ingestion
-Real-time updates for high-velocity data environments.
-
-```mermaid
-graph TD
-    Kafka[Metadata Event] --> Consumer[Streaming Consumer]
-    Consumer --> Hub[Benchmark Hub]
-```
-
-### 39. API Connector Workflow
-Standardizing the connection to third-party data catalogs.
-
-```mermaid
-graph LR
-    API[Catalog API] --> Adapter[Connector Adapter]
-    Adapter --> Schema[Standard Schema]
-```
-
-### 40. Batch Sync Lifecycle
-Orchestrating daily metadata refreshes.
-
-```mermaid
-graph TD
-    Start[1 AM] --> Sync[Full Metadata Refresh]
-    Sync --> End[Report Generated]
-```
-
-### 41. OIDC / SSO Auth Flow
-Securing the governance portal access.
-
-```mermaid
-sequenceDiagram
-    User->>Portal: Login
-    Portal->>AzureAD: Auth Request
-    AzureAD-->>User: Token
-```
-
-### 42. RBAC Model
-Managing permissions for data stewards and analysts.
-
-```mermaid
-graph TD
-    Steward[Data Steward] --> Edit[Edit Metadata]
-    Analyst[Data Analyst] --> Read[Read Only]
-```
-
-### 43. Secrets Management Flow
-Securing the credentials for multi-source connectors.
-
-```mermaid
-graph LR
-    Secret[Snowflake Key] --> Vault[Azure Key Vault]
-    Vault --> Connector[SF Connector]
-```
-
-### 44. Audit Logging Architecture
-Recording every change to the business glossary.
-
-```mermaid
-graph TD
-    Action[Edit Term] --> Log[Immutable Audit Store]
-```
-
-### 45. Metrics Pipeline
-Monitoring the performance of the metadata engine.
-
-```mermaid
-graph LR
-    Engine[Metadata Engine] --> Prom[Prometheus]
-    Prom --> Dash[Grafana]
-```
-
-### 46. Logging Architecture
-Centralized logs for cross-platform connectors.
-
-```mermaid
-graph TD
-    Connector[AWS Connector] --> Loki[Grafana Loki]
-    Loki --> Dash[Log Dashboard]
-```
-
-### 47. Tracing Model
-Distributed tracing for metadata ingestion requests.
-
-```mermaid
-sequenceDiagram
-    Portal->>API: Trigger Sync
-    API->>Worker: Run Indexing
-```
-
-### 48. SLA Monitoring Flow
-Guaranteeing the freshness of the data catalog.
-
-```mermaid
-graph LR
-    Stale[Asset Stale?] --> Alert[Alert: Metadata Outdated]
-```
-
-### 49. Release Pipeline Workflow
-Continuous delivery of the governance platform.
-
-```mermaid
-graph LR
-    Git[Code Push] --> GHA[CI/CD]
-    GHA --> AKS[Deploy Cluster]
-```
-
-### 50. Change Governance Workflow
-Approving architectural changes to the data estate.
-
-```mermaid
-graph TD
-    Prop[New Data Source] --> Board[Data Review Board]
-    Board --> Approve[Register in Catalog]
+    Provision["Sync Interaction Event"] --> Stream["Forensic Stream"]
+    Stream --> Lake["Governance Metadata Lake"]
+    Lake --> Trends["Discovery Efficiency Trends"]
 ```
 
 ---
 
-## 🔬 Data Catalog & Metadata Education
+## 🏛️ Core Governance Pillars
 
-### 1. The Metadata Operating Model
-We advocate for a **Distributed Governance** model where metadata is harvested at the source but governed centrally. This ensures that the technical lineage remains accurate while the business context is provided by local domain experts.
-
-### 2. Benchmark Methodology
-Our benchmarking engine evaluates platforms based on five core pillars:
-- **Harvesting Velocity**: Speed of incremental metadata updates.
-- **Lineage Fidelity**: Accuracy of column-level lineage across transformations.
-- **Discovery Relevance**: How quickly users find the "Golden Record."
-- **Privacy Automation**: Reliability of automated PII classification.
-- **Ecosystem Portability**: Ease of moving metadata across cloud boundaries.
+1.  **Unified Foundation Coordination**: Maximizing resilience by centralizing all governance measurement through a single institutional plane.
+2.  **Automated Metadata Provisioning**: Eliminating "manual indexing" scenarios through proactive orchestration and pattern verification.
+3.  **Sequential Lineage Intelligence**: Ensuring zero-interruption operations through dependency-aware lineage-driven data engineering.
+4.  **Zero-Trust Identity Protection**: Automatically enforcing identity-based access, team-level aggregation, and privacy evaluation across all discovery tiers.
+5.  **Autonomous Operations Logic**: Guaranteeing reliability through automated industry-specific effectiveness monitoring runbooks.
+6.  **Full Discovery Auditability**: Immutable recording of every metadata change and discovery provision for institutional forensics.
 
 ---
 
-## 🚦 Getting Started
+## 🛠️ Technical Stack & Implementation
 
-### 1. Prerequisites
-- **Terraform** (v1.5+).
-- **Docker Desktop**.
-- **Python 3.11+**.
+### Governance Engine & APIs
+*   **Framework**: Python 3.11+ / FastAPI.
+*   **Performance Engine**: Custom Python-based logic for multi-toolchain harvesting and DORA-style discovery metrics.
+*   **Integrations**: Native connectors for Azure Purview, Glue, Dataplex, Snowflake, and Unity Catalog.
+*   **Persistence**: PostgreSQL (Governance Ledger) and Redis (Live Indexing State).
+*   **Auth Orchestrator**: Federated OIDC/SAML for least-privilege governance management access.
 
-### 2. Local Setup
+### Governance Dashboard (UI)
+*   **Framework**: React 18 / Vite.
+*   **Theme**: Dark, Slate, Indigo (Modern high-fidelity productivity aesthetic).
+*   **Visualization**: D3.js for delivery topologies and Recharts for discovery velocity analytics.
+
+### Infrastructure & DevOps
+*   **Runtime**: AWS EKS or Azure Kubernetes Service (AKS) for management plane.
+*   **Measurement Hub**: Managed event sourcing for immutable productivity timeline reconstruction.
+*   **IaC**: Modular Terraform for deploying the governance landing zone and validation fleet.
+
+---
+
+## 🏗️ IaC Mapping (Module Structure)
+
+| Module | Purpose | Real Services |
+| :--- | :--- | :--- |
+| **`infrastructure/governance_hub`** | Central management plane | EKS, PostgreSQL, Redis |
+| **`infrastructure/enforcers`** | Distributed discovery provisioners | Azure, AWS, GCP APIs |
+| **`infrastructure/harvest_pipes`** | Data Ingestion Hubs | Webhooks, Lambda |
+| **`infrastructure/auditing`** | Forensic modernization sinks | S3, Athena, Quicksight |
+
+---
+
+## 🚀 Deployment Guide
+
+### Local Principal Environment
 ```bash
-# Clone the repository
-git clone https://github.com/Devopstrio/data-catalog-benchmark.git
+# Clone the Data Catalog Benchmark repository
+git clone https://github.com/devopstrio/data-catalog-benchmark.git
 cd data-catalog-benchmark
 
-# Start the Governance Hub
-docker-compose up --build
+# Configure environment
+cp .env.example .env
+
+# Launch the Governance stack
+make init
+
+# Trigger a mock discovery update and automated guardrail validation simulation
+make simulate-benchmark
 ```
-Access the Benchmarking Dashboard at `http://localhost:3000`.
+
+Access the Management Portal at `http://localhost:3000`.
 
 ---
 
-## 🛡️ Security & Governance
-- **Zero-Trust Metadata**: All metadata ingestion is performed via short-lived tokens and service principals.
-- **Data Sovereignty**: Metadata remains within the customer's tenant; only benchmark scores are aggregated.
-- **Audit-Ready Lineage**: Every lineage hop is cryptographically hash-checked for integrity.
+## 📜 License
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
-<sub>&copy; 2026 Devopstrio &mdash; Engineering the Future of Data Intelligence.</sub>
+<div align="center">
+  <p>© 2026 Devopstrio. All rights reserved.</p>
+</div>
